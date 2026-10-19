@@ -987,6 +987,7 @@ public class Ejercicios {
         System.out.println("Introduce un exponente");
             int exp = sc.nextInt();
 
+        
         */ 
        
 
