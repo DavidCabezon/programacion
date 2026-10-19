@@ -847,7 +847,149 @@ public class Ejercicios {
         comparar = 
         
         System.out.println(comparar);
-*/
+        
+        
+        //ESTRUCTURAS DE CONTROL REPETITIVAS
+        int i = 0;
+        while (i<=100){
+            System.out.println(i);
+            i++;
+        }
+        
+        int i = 0;
+        do{
+            System.out.println(i);
+            i++;
+        }while(i<=100);        
+    
+        System.out.println("Introduce un numero");
+        int num = sc.nextInt();
+        while (num !=2){
+            System.out.println("funcionaa");
+            num = sc.nextInt();
+        }
+        System.out.println("se termino");
+
+        System.out.println("Introduce un numero");
+            int num;
+        do{
+            num = sc.nextInt();
+            if(num!=2){
+                System.out.println("funcionaa");
+            }
+        }while (num !=2);
+        System.out.println("se termino");
+
+        int i = 0;
+        while (i<=100){
+            if(i%2==0){
+                System.out.println(i);
+            }
+            i++;
+        }
+
+        
+        
+        //EJERCICIOS BUCLES
+        //Ejercicio 1
+        int num = 0;
+        while(num<=9){
+            System.out.println(num);
+            num++;
+        }
+       
+        //Ejercicio 2
+        System.out.println("Introduce un numero");
+            int i = sc.nextInt();
+        int num=1;
+        while(num<=i){
+            System.out.println(num);
+            num++;
+        }
+         
+        //Ejercicio 4
+        System.out.println("Introduce el rango minimo");
+            int num1 = sc.nextInt();
+        System.out.println("Introduce el rango maximo");
+            int num2 = sc.nextInt();    
+        System.out.println("Introduce un numero");
+            int num3 = sc.nextInt();
+        while(num3<num1 || num3>num2){
+            System.out.println("Ese numero esta fuera del rango, introduce otro");
+            num3 = sc.nextInt();
+        }
+
+        
+        //PLUS EJERCICIOS BUCLES
+        //Ejercicio 1
+        System.out.println("Introduce un numero");
+            int num = sc.nextInt();     
+        while (num>=0){
+            System.out.println(num);
+            num--;
+        }
+        
+        //Ejercicio 2          
+        int suma=0;
+        System.out.println("Introduce un numero");
+            int num = sc.nextInt();
+        while (num!=0){
+            suma += num;        
+            System.out.println("Introduce un numero");
+            num = sc.nextInt(); 
+        }
+        System.out.println("La suma es "+suma);
+      
+        //Ejercicio 3       
+        System.out.println("Introduce un numero");
+            int num = sc.nextInt();
+        while (num<0){
+            System.out.println("El numero que has introducido es negativo, introduce otro");
+            num = sc.nextInt();
+        }
+        int contador = 0;
+        while(num!=0){
+            num=num/10;
+            contador++;
+        } 
+        System.out.println("El numero tiene "+contador+" cifras");
+      
+        //Ejercicio 4
+        System.out.println("Introduce un numero");
+            int num = sc.nextInt();
+        while (num<0){
+            System.out.println("El numero que has introducido es negativo, introduce otro");
+            num = sc.nextInt();
+        }
+        int num1= 0;
+        String numero = "";
+        while(num!=0){
+            num1=num%10; 
+            num=num/10;
+            numero += num1;
+        }
+        System.out.println(numero);
+       
+        //Ejercicio 5
+        System.out.println("Introduce un numero");
+            int num = sc.nextInt();
+        int multi = 1;
+        int total = 0;
+        while (multi<=10){
+            total = num*multi;
+            System.out.println(num +" x "+multi+" = "+total);
+            multi++;
+        }
+        
+        //Ejercicio 6        
+        System.out.println("Introduce una base");
+            int base = sc.nextInt();
+        System.out.println("Introduce un exponente");
+            int exp = sc.nextInt();
+        while (base>0){
+            
+        }
+*/        
 
     }
 }
